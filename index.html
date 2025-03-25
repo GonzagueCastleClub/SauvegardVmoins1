@@ -109,6 +109,40 @@
       background: #555;
     }
 
+    .gallery {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.gallery h2 {
+  text-align: left;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  max-width: 220px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+
     footer {
       background: #222;
       color: white;
@@ -116,15 +150,6 @@
       text-align: center;
     }
   </style>
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="The Castle Club" />
-<link rel="manifest" href="/site.webmanifest" />
-
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="shortcut icon" href="/favicon.ico">
-  
 </head>
 <body>
   <header>
@@ -146,7 +171,7 @@
 Une expérience privilégiée, sur invitation seulement.</p>
   </section>
 
-  <section id="events" class="events">
+    <section id="events" class="events">
     <h2>Notre dernier événement</h2>
     <div class="events-grid">
       <div class="event">
@@ -159,6 +184,28 @@ Pour participer à une prochaine soirée exceptionnelle et si vous n'étiez pas 
       </div>
     </div>
   </section>
+
+  <section id="gallery" class="gallery">
+  <h2>Galerie</h2>
+  <div class="gallery-grid">
+    <img src="IMGVestibule.jpg" alt="Soirée The Castle Club">
+    <img src="IMG509.jpg" alt="Événement exclusif">
+    <img src="Essai Trompe.jpg" alt="Château de Canon">
+    <img src="CC2_©lentzwill-244.jpg" alt="Champagne et ambiance">
+    <img src="IMGCuisine.jpg" alt="Groupe d'invités">
+    <img src="IMG511.jpeg" alt="Château">
+    <img src="Luxury Revue.jpg" alt="Soirée privée">
+    <img src="IMGPorscheCarton.jpg" alt="Détail de décoration">
+    <img src="CC2_©lentzwill-277.jpg" alt="DJ et musique">
+    <img src="CC2_©lentzwill-213.jpg" alt="Feu d'artifice">
+    <img src="Champagne Servi.jpg" alt="Moment privilégié">
+    <img src="CC2_©lentzwill-706.jpg" alt="Feu d'artifice">
+    <img src="IMGPerron.jpg" alt="Moment privilégié">
+    <img src="IMGTrompesPerron.jpg" alt="Soirée">
+    <img src="IMGBrits.jpg" alt="Soirée">
+  </div>
+</section>
+
 
   <footer>
     <p>&copy; 2025 The Castle Club. Tous droits réservés.</p>
